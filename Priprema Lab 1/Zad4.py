@@ -1,11 +1,8 @@
-def brojel(lista):
-    num = []
-    for x in lista:
-        if type(x).__name__ == 'list':
-            num.append(len(x))
-        else:
-            num.append(-1)
-    return num
+def zbir(lista):
+    zbir = []
+    for x in range(len(lista)-1):
+        zbir.append(lista[x] + lista[x+1])
+    return zbir
 
 
-print(brojel([[1, 2, 3], [1], 2, "str", [], [2, 3, 4, 5, 6]]))
+print(zbir([2, 5, 1, 7, 0, 2]))
